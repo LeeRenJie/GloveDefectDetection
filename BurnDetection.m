@@ -1,4 +1,4 @@
-tp05                            %---------------Detect Burn Holes----------------%
+                           %---------------Detect Burn Holes----------------%
 % Load the image
 image = imread('Burn-1.jpg');
 
