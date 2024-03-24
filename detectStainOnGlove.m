@@ -34,7 +34,7 @@ function outputImage = detectStainOnGlove(inputImage)
     stats = regionprops(cc, 'Area', 'Centroid', 'BoundingBox');
 
     % Circle thickness
-    circleThickness = 17; % Adjust thickness here
+    circleThickness = 17; % Adjust thickness
 
     for i = 1:length(stats)
         center = stats(i).Centroid;

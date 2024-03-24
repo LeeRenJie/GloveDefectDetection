@@ -35,7 +35,6 @@ function resultImage = detectBurnHoles(inputImage)
     dilatedHoleMask = imdilate(holeMask, dilationElement);
     
     % Create an output image that overlays the detected holes on the original image
-    % For simplicity, let's highlight detected holes in red on the original image
     resultImage = inputImage;
     redChannel = resultImage(:,:,1); % Extract the red channel
     redChannel(dilatedHoleMask) = 255; % Highlight holes in red
