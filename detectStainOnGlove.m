@@ -55,9 +55,6 @@ function outputImage = detectStainOnGlove(inputImage)
                 circleRadius = diameter / 2;
             end
             
-            % Initialize a binary mask the size of the output image to draw circles on
-            circleMask = false(size(outputImage, 1), size(outputImage, 2));
-            
             % Create a grid of column and row indices for the entire image
             [columnsInImage, rowsInImage] = meshgrid(1:size(outputImage, 2), 1:size(outputImage, 1));
             
