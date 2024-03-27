@@ -27,7 +27,7 @@ function outputImage = detectStainOnGlove(inputImage)
     closedStainMask = imclose(StainOnGloveMaskCleaned, se);
 
     % Prepare to overlay detected stains on the original image
-    ouputImage = inputImage;
+    outputImage = inputImage;
     
     % Find connected components in the cleaned stain mask for visualization
     cc = bwconncomp(closedStainMask);
